@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+#pwa-install-button {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: none;
+	background-color: red;
+	color: white;
+	padding: 15px 25px;
+	border-radius: 5px;
+}

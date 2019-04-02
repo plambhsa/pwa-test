@@ -1,11 +1,11 @@
 var promptEvent;
+var btn = document.querySelector('#pwa-install-button');
 
 window.addEventListener('beforeinstallprompt', event => {
 	promptEvent = event;
+	btn.style.display = 'block';
 	console.log('beforeinstallprompt caught');
 });
-
-var btn = document.querySelector('#pwa-install-button');
 
 btn.addEventListener('click', () => {
 	if (promptEvent) {
